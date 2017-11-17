@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1063414431124",
+    "firebase_url": "https://hooof-ionic.firebaseio.com",
+    "project_id": "hooof-ionic",
+    "storage_bucket": "hooof-ionic.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1063414431124:android:d26812a6f169e24e",
+        "android_client_info": {
+          "package_name": "io.ionic.firechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1063414431124-qvbod1t6176j7fhg7s6ijc3qu283v5b7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWvwSSBfd1VPuux1wTXpxyhC93HMBFN8I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
