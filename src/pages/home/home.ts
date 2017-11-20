@@ -11,6 +11,8 @@ export class HomePage {
   name;
   newmessage;
   messagesList;
+  sender_id='srinivas';
+  receiver_id='John Doe';
 
   constructor(public navCtrl: NavController, public alert: AlertController) {
     this.ref = firebase.database().ref('messages');
@@ -38,19 +40,27 @@ export class HomePage {
       data.forEach(data => {
         tmp.push({
           key: data.key,
-          name: data.val().name,
+          name: data.val().sender_id,
           message: data.val().message
         })
       });
       this.messagesList = tmp;
+      // console.log(this.name);
     });
   }
 
   send() {
+    console.log(this.name.username);
     // add new data to firebase
     this.ref.push({
-      name: this.name.username,
-      message: this.newmessage
+      sender_id: this.name.username,
+      receiver_id: this.receiver_id,
+      message_delete_flag_by_sender_id: 0,
+      message_delete_flag_by_receiver_id: 0,
+      message: this.newmessage,
+      subject: 'null',
+      attachment_path: 'null',
+      message_status: 'sent'
     });
     this.newmessage = '';
   }
